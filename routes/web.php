@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Admin\ProjectController; //controller importato
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,4 +29,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+
+//rotta per il backoffice
+Route::middleware('auth')->prefix('admin')->group(function () {
+    Route::resource('projects', ProjectController::class);
+});
+
+
+
+require __DIR__ . '/auth.php';
