@@ -9,15 +9,13 @@ export default defineConfig({
                 'resources/scss/app.scss',
                 'resources/js/app.js',
             ],
-
-            resolve: {
-                alias: {
-                    '~resources': '/resources/',
-                    '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap')
-                }
-            },
-
             refresh: true,
         }),
     ],
+    resolve: {
+        alias: {
+            '~resources': '/resources/',
+            '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap')
+        }
+    },
 });
