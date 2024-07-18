@@ -1,6 +1,7 @@
-@extends('layouts.admin')
+@extends('layouts.app')
 
 @section('content')
+<div class="container">
     <h1>Projects</h1>
     <a href="{{ route('projects.create') }}" class="btn btn-primary">crea nuovo progetto</a>
     @if (session('success'))
@@ -11,16 +12,20 @@
     <table class="table">
         <thead>
             <tr>
-                <th>ID</th>
+                <th>#</th>
                 <th>Title</th>
                 <th>Languages</th>
                 <th>Actions</th>
             </tr>
         </thead>
         <tbody>
+            @php
+            //per contare la posizione nella lista in modo sequenziale senza usare l'id
+                $counter = 1;
+            @endphp
             @foreach ($projects as $project)
                 <tr>
-                    <td>{{ $project->id }}</td>
+                    <td>{{ $counter++ }}</td> <!-- Incrementa il contatore per ogni riga -->
                     <td>{{ $project->title }}</td>
                     <td>{{ $project->languages }}</td>
                     <td>
@@ -36,4 +41,5 @@
             @endforeach
         </tbody>
     </table>
+</div>
 @endsection

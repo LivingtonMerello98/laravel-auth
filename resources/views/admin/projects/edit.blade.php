@@ -1,4 +1,4 @@
-{{-- @extends('layouts.admin') --}}
+@extends('layouts.admin') 
 
 @section('content')
     <h1>Edit Project</h1>
