@@ -19,13 +19,9 @@
             </tr>
         </thead>
         <tbody>
-            @php
-            //per contare la posizione nella lista in modo sequenziale senza usare l'id
-                $counter = 1;
-            @endphp
             @foreach ($projects as $project)
                 <tr>
-                    <td>{{ $counter++ }}</td> <!-- Incrementa il contatore per ogni riga -->
+                    <td>{{ $counter++ }}</td> 
                     <td>{{ $project->title }}</td>
                     <td>{{ $project->languages }}</td>
                     <td>

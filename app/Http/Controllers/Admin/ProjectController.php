@@ -10,10 +10,11 @@ class ProjectController extends Controller
 {
     public function index()
     {
+        $counter = 1;
         //orm per tutti i record del db -> $projects
         $projects = Project::all();
         // rotta per la vista
-        return view('admin.projects.index', compact('projects'));
+        return view('admin.projects.index', compact('projects', 'counter'));
     }
 
     public function create()
