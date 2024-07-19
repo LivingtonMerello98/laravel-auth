@@ -4,7 +4,7 @@
 <div class="container">
     <div class="container d-flex mb-5">
         <div class="col-md-6">
-            <h3 class="text-uppercase text-white">projects</h3>
+            <h3 class="text-uppercase text-white card-header">projects</h3>
         </div>
         <div class="col-md-6 d-flex justify-content-end">
             <a href="{{ route('projects.create') }}" class="btn btn-secondary rounded-1 mx-4">
@@ -57,7 +57,7 @@
     </table>
     {{-- paginatore --}}
     <div class="col-md-12 d-flex justify-content-end">
-        {{$projects->links()}}
+        {{$projects->links('vendor.pagination.bootstrap-5')}}
     </div>
 </div>
 @endsection
