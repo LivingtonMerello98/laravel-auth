@@ -20,8 +20,8 @@
     <table class="table table-dark table-striped">
         <thead>
             <tr>
-                <th class="text-uppercase">#</th>
-                <th class="text-uppercase">immagine</th>
+                {{-- <th class="text-uppercase">#</th> --}}
+                <th class="text-uppercase">Thumb</th>
                 <th class="text-uppercase">Title</th>
                 <th class="text-uppercase">Languages</th>
                 <th class="text-uppercase text-center">Actions</th>
@@ -30,12 +30,27 @@
         <tbody>
             @foreach ($projects as $project)
                 <tr>
-                    <td>{{ $counter++ }}</td> 
-                    <td class="text-center">
-                        <img src="https://t4.ftcdn.net/jpg/03/08/69/75/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg" alt="" class="w-100" style="max-width: 50px;">
+                    kc
+                    <td>
+                        <div>
+                            <img src="{{ $project->image }}" alt="{{ $project->title }}" class="w-100" style="max-width: 50px; min-width: 50px;">
+                        </div>
                     </td>
-                    <td >{{ $project->title }}</td>
-                    <td>{{ $project->languages }}</td>
+                    <td>
+                        <div>
+                            <p class="text-white fw-bolder">{{ $project->title }}</p>
+                            <p class="fs-6 fw-lighter">{{ $project->description }}</p>
+                        </div>
+                    </td>
+                    <td>
+                       <ul>
+                            @foreach (explode(',',$project->languages) as $language )
+
+                                <li>{{ $language }}</li>
+
+                            @endforeach
+                       </ul>
+                    </td>
                     <td class="text-center">
                         <a href="{{ route('projects.show', $project->id) }}" class="btn btn-info rounded-1">
                             <i class="fa-regular fa-eye" style="color: #ffffff;"></i>

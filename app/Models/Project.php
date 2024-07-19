@@ -10,6 +10,16 @@ class Project extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'description', 'languages'
+        'url', 'image', 'title', 'description', 'languages'
     ];
+
+    public function getLanguagesArrayAttribute()
+    {
+        return explode(',', $this->languages);
+    }
+
+    public function setLanguagesArrayAttribute($value)
+    {
+        $this->attributes['languages'] = implode(',', $value);
+    }
 }

@@ -27,13 +27,16 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         //validazione dati provvisoria
-        $request->validate([
+        $validated = $request->validate([
+            'url' => 'required',
+            'image' => 'required',
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'languages' => 'required|string|max:255',
+            'languages' => 'required|array',
         ]);
 
-        Project::create($request->all());
+        $validated['languages'] = implode(',', $validated['languages']);
+        Project::create($validated);
 
 
         return redirect()->route('projects.index'); //da rivedere
@@ -57,13 +60,16 @@ class ProjectController extends Controller
     //aggiornamento
     public function update(Request $request, Project $project)
     {
-        $request->validate([
+        $validated = $request->validate([
+            'url' => 'required',
+            'image' => 'required',
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'languages' => 'required|string|max:255',
+            'languages' => 'required|array',
         ]);
 
-        $project->update($request->all());
+        $validated['languages'] = implode(',', $validated['languages']);
+        $project->update($validated);
 
         return redirect()->route('projects.index');
     }
