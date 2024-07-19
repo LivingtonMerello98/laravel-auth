@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('projects', function (Blueprint $table) {
             $table->string('title', 50)->change(); //lunghezza caratteri titolo
-            $table->string('description', 150)->nullable()->change(); //lunghezza caratteri descrizione-da cambiareee
+            $table->string('description', 150)->nullable()->change(); //lunghezza caratteri descrizione-da 
             $table->string('languages')->nullable()->change();
             $table->text('url')->after('id');
             $table->text('image')->after('url');

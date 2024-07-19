@@ -30,7 +30,6 @@
         <tbody>
             @foreach ($projects as $project)
                 <tr>
-                    kc
                     <td>
                         <div>
                             <img src="{{ $project->image }}" alt="{{ $project->title }}" class="w-100" style="max-width: 50px; min-width: 50px;">
@@ -39,7 +38,9 @@
                     <td>
                         <div>
                             <p class="text-white fw-bolder">{{ $project->title }}</p>
-                            <p class="fs-6 fw-lighter">{{ $project->description }}</p>
+                            <div class="" style="max-width: 700px">
+                                <p class="fs-6 fw-lighter">{{ $project->description }}</p>
+                            </div>
                         </div>
                     </td>
                     <td>

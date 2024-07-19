@@ -43,19 +43,19 @@
           <hr>
           <ul class="nav nav-pills flex-column mb-auto">
               <li>
-                  <a href="{{ url('/dashboard') }}" class="nav-link text-white" aria-current="page">
+                  <a href="{{ url('/dashboard') }}" class="nav-link text-white bg-light-hover" aria-current="page">
                       <i class="fas fa-house d-inline me-2"></i>
                       <span class="d-none d-md-inline-block">Dashboard</span>
                   </a>
               </li>
               <li>
-                  <a href="{{ url('/admin/projects') }}" class="nav-link text-white">
+                  <a href="{{ url('/admin/projects') }}" class="nav-link text-white bg-light-hover">
                       <i class="fa-solid fa-chart-simple d-inline  me-2"></i>
                       <span class="d-none d-md-inline-block">Projects</span>
                   </a>
               </li>
               <li>
-                  <a href="{{ url('admin/projects/create') }}" class="nav-link text-white ">
+                  <a href="{{ url('admin/projects/create') }}" class="nav-link text-white bg-light-hover">
                       <i class="fa-solid fa-plus d-inline me-2"></i>
                       <span class="d-none d-md-inline-block">Crea Nuovo </span>
                   </a>
