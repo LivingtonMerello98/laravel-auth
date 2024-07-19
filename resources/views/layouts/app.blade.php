@@ -59,6 +59,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('admin/projects/create') }}">{{ __('Create') }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/guest') }}">{{ __('Guest') }}</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
