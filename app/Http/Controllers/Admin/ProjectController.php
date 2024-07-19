@@ -12,7 +12,9 @@ class ProjectController extends Controller
     {
         $counter = 1;
         //orm per tutti i record del db -> $projects
-        $projects = Project::all();
+        //da all() a latest per poter usare il paginator
+        //consultare Providers/AppServiceProvider
+        $projects = Project::latest()->paginate(5);
         // rotta per la vista
         return view('admin.projects.index', compact('projects', 'counter'));
     }

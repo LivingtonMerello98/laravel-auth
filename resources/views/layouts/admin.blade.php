@@ -28,30 +28,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('admin/projects/create') }}">Create</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="crea-nuovo-prodotto.html">Nuovo prodotto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Clienti</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mt-4" href="">Impostazioni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Profilo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Esci</a>
-                    </li>
                 </ul>
             </div>
           </div>
       </nav>
     </div>
 
-    <main class="d-flex overflow-hidden">
+    <main class="d-flex overflow-hidden bg-dark">
         <!-- side-bar -->
-        <div class=" col-md-3 col-lg-3 d-flex flex-column flex-shrink-0 p-3 text-white d-none d-md-block bg-dark min-vh-100">
+        <div class=" col-md-3 col-lg-3 d-flex flex-column flex-shrink-0 p-3 text-white d-none d-md-block bg-dark bg-gradient min-vh-100">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <span class="fs-4">Admin Area</span>
           </a>
@@ -85,7 +70,9 @@
           <hr>
           <div>
             <div class="d-flex">
-                <img src="https://avatars.githubusercontent.com/u/162736759?v=4" alt="" width="32" height="32" class="rounded-circle me-2 mx-1">
+                <div class="my-1">
+                    <img src="https://avatars.githubusercontent.com/u/162736759?v=4" alt="" width="32" height="32" class="rounded-circle me-2 mx-1">
+                </div>
                 <ul class="navbar-nav ml-auto">
                     <!-- Authentication Links -->
                     @guest
