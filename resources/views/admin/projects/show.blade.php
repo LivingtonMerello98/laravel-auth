@@ -1,7 +1,8 @@
 @extends('layouts.admin') 
 
 @section('content')
-    <h1>{{ $project->title }}</h1>
+    <div class="container">
+        <h1>{{ $project->title }}</h1>
     <p>{{ $project->description }}</p>
     <p><strong>Languages:</strong> {{ $project->languages }}</p>
     <a href="{{ route('projects.edit', $project->id) }}" class="btn btn-warning">Edit</a>
@@ -10,4 +11,5 @@
         @method('DELETE')
         <button type="submit" class="btn btn-danger">Delete</button>
     </form>
+    </div>
 @endsection
