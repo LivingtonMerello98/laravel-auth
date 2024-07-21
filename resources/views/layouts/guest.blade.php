@@ -13,11 +13,11 @@
 
     @include('guest-components.hero')
 
-    <section>
-      @yield('content') 
-    </section>
-    
-    @include('shared.footer')
+      @yield('about')
+      @yield('content')
+      @yield('contact')
+     
+      @include('shared.footer') 
 
 </body>
 </html>

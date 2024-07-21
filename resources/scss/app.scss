@@ -4,3 +4,13 @@
 @import url("./components/hero.scss");
 @import url("./components/header.scss");
 @import url("./components/footer.scss");
+@import './partials/variables.scss';
+
+
+section:nth-child(odd) {
+    background: $primary-section;
+}
+
+section:nth-child(even) {
+    background: $secondary-section;
+}
