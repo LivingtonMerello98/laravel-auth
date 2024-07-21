@@ -85,7 +85,7 @@
 
             <div class="row">
                 @foreach ($projects as $project)
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class=" custom-card mb-4">
                             <img src="{{$project->image}}" class="card-img-top" alt="">
                             <div class="card-body">
@@ -103,16 +103,63 @@
 @endsection
 
 
+
 @section('contact')
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="text-white"> contacts</h3>
-                </div>
+<section>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12 text-center mb-3">
+                <h3 class="text-white text-uppercase">Contacts</h3>
             </div>
+
+            <div class="col-md-6 py-2">
+                <form action="" method="post">
+
+                    <div class="form-group mb-3 mx-2">
+                        <label for="name" class="text-white">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group mb-3 mx-2">
+                        <label for="email" class="text-white">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6 py-2 ">
+                <form action="" method="post">
+
+                    <div class="form-group mb-3 mx-2">
+                        <label for="subject" class="text-white">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject">
+                    </div>
+
+                    <div class="form-group mb-3 mx-2">
+                        <label for="phone" class="text-white">Phone</label>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-12 py-2 ">
+                <form action="" method="post">
+
+                    <div class="form-group mb-3 mx-2">
+                        <label for="message" class="text-white">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
 @endsection
+
