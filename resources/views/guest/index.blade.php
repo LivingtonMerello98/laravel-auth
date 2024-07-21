@@ -27,7 +27,7 @@
                         <div class="col-md-12 d-flex flex-column align-items-end ">
                             <p class="text-white mb-3"><span class="text-success block">FullName: </span>Livington Merello</p>
 
-                            <p class="text-white mb-3"><span class="text-success block">Birthday: </span>36 sept 1998</p>
+                            <p class="text-white mb-3"><span class="text-success block">Birthday: </span>26 sept 1998</p>
 
                             <p class="text-white mb-3"><span class="text-success block">Number: </span>+39 13345678</p>
 
@@ -80,7 +80,7 @@
     <section class="content">
         <div class="container py-5">
             <div class="col-md-12 mb-5 text-center">
-                <h3 class="text-white text-uppercase">portfolio</h3>
+                <h3 class=" text-uppercase text-white title">portfolio</h3>
             </div>
 
             <div class="row">
@@ -106,7 +106,7 @@
 
 @section('contact')
 
-<section>
+<section class="contact">
     <div class="container py-5">
         <div class="row">
             <div class="col-md-12 text-center mb-3">
@@ -143,16 +143,16 @@
                 </form>
             </div>
 
-            <div class="col-md-12 py-2 ">
+            <div class="col-md-12 py-2">
                 <form action="" method="post">
 
-                    <div class="form-group mb-3 mx-2">
+                    <div class="form-group mb-4 mx-2">
                         <label for="message" class="text-white">Message</label>
                         <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
                     </div>
 
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-success">Send Message</button>
                     </div>
                 </form>
             </div>

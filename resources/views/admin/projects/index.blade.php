@@ -38,9 +38,9 @@
                     <td>
                         <div>
                             <p class="text-white fw-bolder">{{ $project->title }}</p>
-                            <div class="" style="max-width: 700px">
+                            {{-- <div class="" style="max-width: 700px">
                                 <p class="fs-6 fw-lighter">{{ $project->description }}</p>
-                            </div>
+                            </div> --}}
                         </div>
                     </td>
                     <td>

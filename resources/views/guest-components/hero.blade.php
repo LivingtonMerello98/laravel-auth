@@ -1,4 +1,4 @@
-<section class="hero">
+<div class="hero">
     <div class="container">
         <div class="row align-items-center">
 
@@ -19,4 +19,4 @@
             </div>
         </div>
     </div>
-</section>
+</div>
