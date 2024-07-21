@@ -6,8 +6,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 py-2 text-center">
-                <h3 class="text-white">sezione about</h3>
-                <hp class="text-white">lorem ipsum</hp>
+                <h4 class="text-white py-3 text-uppercase">About Me</h4>
+                
             </div>
         </div>
     </div>
