@@ -57,13 +57,13 @@
               <li>
                   <a href="{{ url('admin/projects/create') }}" class="nav-link text-white bg-light-hover">
                       <i class="fa-solid fa-plus d-inline me-2"></i>
-                      <span class="d-none d-md-inline-block">Crea Nuovo </span>
+                      <span class="d-none d-md-inline-block">Create new  </span>
                   </a>
               </li>
               <li>
                   <a href="{{ url('/') }}" class="nav-link text-white">
                       <i class="fa-solid fa-user d-inline me-2"></i>
-                      <span class="d-none d-md-inline-block">Area autenticazione</span>
+                      <span class="d-none d-md-inline-block">authentication</span>
                   </a>
               </li>
           </ul>

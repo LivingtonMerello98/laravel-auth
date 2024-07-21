@@ -15,15 +15,15 @@
                         @endif
 
                             <div class="text-warning">
-                                {{ __('Sei loggato!') }}
+                                {{ __('You are logged in!') }}
                             </div>
                     </div>
                 </div>
                 <div class="card bg-dark">
-                    <div class="card-header text-white bg-primary bg-gradient ">Bentornato</div>
+                    <div class="card-header text-white bg-primary bg-gradient ">Welcome Back</div>
 
                     <div class="card-body bg-secondary">
-                       <p class="text-white">Esplora i progetti, modifica e crea in tutta libertà</p>
+                       <p class="text-white">Explore projects, edit, and create with complete freedom. Whether you're experimenting with new ideas or refining existing ones, you have the flexibility to shape your vision as you see fit!</p>
                     </div>
                 </div>
             </div>
