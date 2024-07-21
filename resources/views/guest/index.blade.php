@@ -1,12 +1,17 @@
-@extends('layouts.app')
+@extends('layouts.guest')
+
 
 @section('content')
+
     <div class="container">
-        <h1>Projects</h1>
-        <ul>
-            @foreach ($projects as $project)
+        
+        <h2>Progetti</h2>
+        @foreach ($projects as $project)
+            <ul>
                 <li>{{ $project->title }} - {{ $project->languages }}</li>
-            @endforeach
-        </ul>
+            </ul>
+        @endforeach
+
     </div>
+
 @endsection

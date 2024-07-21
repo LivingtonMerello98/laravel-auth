@@ -19,11 +19,11 @@
     @vite(['resources/js/app.js'])
 </head>
 
-<body>
+<body class="bg-dark">
     <div id="app">
 
 
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-secondary shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" c>
                     <div class="logo_laravel">
@@ -48,19 +48,19 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
+                            <a class="nav-link text-white" href="{{ url('/') }}">{{ __('Home') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/dashboard') }}">{{ __('Dashboard') }}</a>
+                            <a class="nav-link text-white" href="{{ url('/dashboard') }}">{{ __('Dashboard') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/admin/projects') }}">{{ __('Projects') }}</a>
+                            <a class="nav-link text-white" href="{{ url('/admin/projects') }}">{{ __('Projects') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('admin/projects/create') }}">{{ __('Create') }}</a>
+                            <a class="nav-link text-white" href="{{ url('admin/projects/create') }}">{{ __('Create') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/guest') }}">{{ __('Guest') }}</a>
+                            <a class="nav-link text-white" href="{{ url('/guest') }}">{{ __('Guest') }}</a>
                         </li>
                     </ul>
 

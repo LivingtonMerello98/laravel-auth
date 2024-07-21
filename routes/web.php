@@ -1,8 +1,8 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\Admin\ProjectController; //controller importato
-use App\Http\Controllers\Guest\PageController;
+use App\Http\Controllers\Admin\ProjectController; //controller per area amministratore
+use App\Http\Controllers\Guest\PageController; //controller per area
 use Illuminate\Support\Facades\Route;
 
 /*
