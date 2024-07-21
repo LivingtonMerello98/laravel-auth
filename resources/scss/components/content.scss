@@ -1,8 +1,5 @@
 @import '../partials/variables.scss';
 
-// styles.scss
-
-// styles.scss
 
 .custom-card {
     background-color: transparent;
@@ -10,9 +7,11 @@
     height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; // Align items to the bottom
+    justify-content: flex-end;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     .card-body {
         flex-grow: 1;
@@ -41,9 +40,16 @@
         object-fit: cover;
         height: 250px;
         width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
-    &:hover .card-body {
-        opacity: 2;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+        .card-body {
+            opacity: 1;
+        }
     }
 }
